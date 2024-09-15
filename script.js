@@ -3,8 +3,8 @@ document.addEventListener('mousemove', (event) => {
     const { clientX: x, clientY: y } = event;
     const { innerWidth: width, innerHeight: height } = window;
 
-    const moveX = ((x / width) - 0.5) * 40; // Increased intensity
-    const moveY = ((y / height) - 0.5) * -40; // Increased intensity
+    const moveX = ((x / width) - 0.8) * 100; // Increased intensity
+    const moveY = ((y / height) - 0.8) * -100; // Increased intensity
 
     image.style.transform = `rotateY(${moveX}deg) rotateX(${moveY}deg)`;
 });
