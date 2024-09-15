@@ -70,7 +70,7 @@ header {
 
 .hero-image img {
     width: 100%;
-    max-width: 1000px;
+    max-width: 100%;
     border-radius: 10px;
 }
 
