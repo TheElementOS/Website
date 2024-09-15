@@ -22,7 +22,7 @@ header {
     background-color: #010101;
     padding: 1.5rem;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     position: fixed;
     width: 100%;
@@ -32,7 +32,7 @@ header {
 .logo h1 {
     color: white;
     font-size: 1.8rem;
-    letter-spacing: 2px;
+    letter-spacing: 2spx;
 }
 
 .highlight {
@@ -41,7 +41,7 @@ header {
 
 .hero {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
     padding: 4rem;
     background-color: #090909;
@@ -50,8 +50,7 @@ header {
 }
 
 .hero-text {
-    max-width: 90%;
-    margin-bottom: 2rem;
+    max-width: 50%;
 }
 
 .hero-text h2 {
@@ -69,12 +68,9 @@ header {
     animation: fadeIn 2s ease-out;
 }
 
-.hero-image {
-    width: 50%;
-}
-
 .hero-image img {
     width: 100%;
+    max-width: 100%;
     border-radius: 10px;
 }
 
@@ -99,55 +95,4 @@ header {
 @keyframes fadeIn {
     0% { opacity: 0; }
     100% { opacity: 1; }
-}
-
-/* Media Queries for Responsiveness */
-@media (max-width: 768px) {
-    .logo h1 {
-        font-size: 1.5rem;
-    }
-
-    .hero-text h2 {
-        font-size: 2rem;
-    }
-
-    .hero-text p {
-        font-size: 1rem;
-    }
-
-    .btn-primary {
-        font-size: 1rem;
-        padding: 0.8rem 1.5rem;
-    }
-
-    .hero-image {
-        width: 75%;
-    }
-}
-
-@media (max-width: 480px) {
-    header {
-        padding: 1rem;
-    }
-
-    .logo h1 {
-        font-size: 1.2rem;
-    }
-
-    .hero-text h2 {
-        font-size: 1.5rem;
-    }
-
-    .hero-text p {
-        font-size: 0.9rem;
-    }
-
-    .btn-primary {
-        font-size: 0.9rem;
-        padding: 0.6rem 1rem;
-    }
-
-    .hero-image {
-        width: 90%;
-    }
 }
