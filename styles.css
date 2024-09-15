@@ -68,7 +68,7 @@ header {
     animation: fadeIn 2s ease-out;
 }
 
-.hero-image img {
+.image img {
     width: 100%;
     max-width: 80%;
     border-radius: 10px;
