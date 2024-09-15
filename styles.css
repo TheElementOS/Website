@@ -35,6 +35,10 @@ header {
     letter-spacing: 2spx;
 }
 
+.highlight {
+    color: #f9c125;
+}
+
 .hero {
     display: flex;
     justify-content: space-between;
@@ -66,7 +70,7 @@ header {
 
 .hero-image img {
     width: 100%;
-    max-width: 500px;
+    max-width: 1000px;
     border-radius: 10px;
 }
 
