@@ -22,7 +22,7 @@ header {
     background-color: #010101;
     padding: 1.5rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     position: fixed;
     width: 100%;
@@ -41,9 +41,8 @@ header {
 
 .hero {
     display: flex;
-    justify-content: center;
-    align-items: center;
     flex-direction: column;
+    align-items: center;
     padding: 4rem;
     background-color: #090909;
     min-height: 100vh;
@@ -70,9 +69,12 @@ header {
     animation: fadeIn 2s ease-out;
 }
 
+.hero-image {
+    width: 50%;
+}
+
 .hero-image img {
     width: 100%;
-    max-width: 100%;
     border-radius: 10px;
 }
 
@@ -117,6 +119,10 @@ header {
         font-size: 1rem;
         padding: 0.8rem 1.5rem;
     }
+
+    .hero-image {
+        width: 75%;
+    }
 }
 
 @media (max-width: 480px) {
@@ -139,5 +145,9 @@ header {
     .btn-primary {
         font-size: 0.9rem;
         padding: 0.6rem 1rem;
+    }
+
+    .hero-image {
+        width: 90%;
     }
 }
