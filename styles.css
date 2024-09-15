@@ -16,6 +16,7 @@ body {
     line-height: 1.1;
     background-color: #080808;
     color: #ffffff;
+    perspective: 1000px; /* Add perspective for 3D effect */
 }
 
 header {
@@ -27,12 +28,13 @@ header {
     position: fixed;
     width: 100%;
     top: 0;
+    z-index: 1000; /* Ensure header is above other elements */
 }
 
 .logo h1 {
     color: white;
     font-size: 1.8rem;
-    letter-spacing: 2spx;
+    letter-spacing: 2px;
 }
 
 .highlight {
@@ -47,6 +49,7 @@ header {
     background-color: #090909;
     min-height: 100vh;
     text-align: center;
+    position: relative; /* Ensure image positioning is relative to hero section */
 }
 
 .hero-text {
@@ -68,9 +71,16 @@ header {
     animation: fadeIn 2s ease-out;
 }
 
-.image img {
+.image {
     width: 100%;
     max-width: 80%;
+    transform-style: preserve-3d; /* Preserve 3D transformations */
+    transition: transform 0.1s ease-out; /* Smooth transition */
+}
+
+.image img {
+    width: 100%;
+    max-width: 100%;
     border-radius: 10px;
 }
 
