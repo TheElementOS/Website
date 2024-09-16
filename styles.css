@@ -102,6 +102,47 @@ header {
     transform: scale(1.1);
 }
 
+.developers {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    display: flex;
+    gap: -25px;
+    transform: rotate(3deg);
+  }
+  
+  .developer {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, z-index 0.3s ease;
+    z-index: 1;
+    margin-left: -10px;
+  }
+  
+  .developer img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  
+  .developer:hover {
+    transform: scale(1.5);
+    box-shadow: 0 10px 22px rgba(0, 0, 0, 0.4);
+    z-index: 10;
+  }
+  
+  .developer:active {
+    transform: scale(1.2);
+  }
+  
+  .developer:focus {
+    outline: none;
+  }
+
 @keyframes fadeIn {
     0% { opacity: 0; }
     100% { opacity: 1; }
