@@ -14,13 +14,17 @@
 body {
     font-family: 'Font', sans-serif;
     line-height: 1.1;
-    background-color: #080808;
-    color: #ffffff;
+    background-image: url('w.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+    background-size: cover;
     perspective: 1000px;
 }
 
 header {
-    background-color: #010101;
+    background-color: #01010156;
     padding: 1.5rem;
     display: flex;
     justify-content: space-between;
@@ -46,7 +50,6 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 4rem;
-    background-color: #090909;
     min-height: 100vh;
     text-align: center;
     position: relative;
