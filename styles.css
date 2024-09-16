@@ -104,7 +104,7 @@ header {
 
 .developers {
     position: absolute;
-    top: 30px;
+    top: 20px;
     right: 30px;
     display: flex;
     gap: -25px;
