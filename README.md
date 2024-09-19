@@ -1,3 +1,3 @@
 # ElementOS Website
 You can see this website on https://theelementos.netlify.app
-Whole website was created by @Kriksoet2
+Whole website was created by @Krikset2
